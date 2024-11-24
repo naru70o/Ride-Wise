@@ -1,6 +1,6 @@
-function Partners() {
+function PartnersMobile() {
   return (
-    <div className="md:hidden flex mt-[3.2rem] h-[4.8rem] lg:h-[3.2rem] justify-around opacity-55 md:mt-[4.8rem]">
+    <div className="hidden md:flex mt-[3.2rem] h-[4.8rem] lg:h-[3.2rem] sm:h-[2.4rem] col-start-2 col-span-10 justify-around opacity-55 md:mt-[4.8rem] ">
       <img src="./ferarari.png" />
       <img src="./Chevrolet.png" />
       <img src="./Honda.png" />
@@ -13,4 +13,4 @@ function Partners() {
   );
 }
 
-export default Partners;
+export default PartnersMobile;

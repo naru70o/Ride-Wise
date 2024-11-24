@@ -1,6 +1,6 @@
 function CarList() {
   return (
-    <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full max-w-[120rem] mx-auto grid col-start-2 m-0 col-span-10">
+    <div className="mt-[9.2rem] w-full max-w-[120rem] mx-auto grid col-start-2 m-0 col-span-10">
       <h1 className="text-[2.8rem] text-sunset-orange font-extrabold lg:text-[3rem]">
         Our car collection
       </h1>
