@@ -36,6 +36,9 @@ body {
 .li-hover {
   @apply hover:hover:text-slate-teal transition-all;
 }
+.li-style {
+  @apply hover:text-sunset-orange transition-all;
+}
 
 .info-header {
   @apply font-extrabold text-[1.4rem] text-deep-brown;

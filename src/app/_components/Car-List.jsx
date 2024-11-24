@@ -1,10 +1,10 @@
 function CarList() {
   return (
-    <div className="mt-[9.2rem] w-full max-w-[120rem] mx-auto grid col-start-2 m-0 col-span-10">
+    <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full max-w-[120rem] mx-auto grid col-start-2 m-0 col-span-10">
       <h1 className="text-[2.8rem] text-sunset-orange font-extrabold lg:text-[3rem]">
         Our car collection
       </h1>
-      <div className="grid grid-cols-custom-3 gap-[2rem] mt-[4.6rem]">
+      <div className="grid grid-cols-custom-3 gap-[2rem] mt-[4.6rem] sm:mt-[3.2rem]">
         <div className="bg-soft-almond flex flex-col rounded-[1.8rem] md:mx-auto overflow-hidden mb-10 py-4">
           {/* Logo and Wishlist icon */}
           <div className="flex gap-2 py-2 px-8 items-center justify-between">

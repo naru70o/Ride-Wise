@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "custom-3": "repeat(auto-fill, minmax(300px, 1fr))", // Custom grid-cols-3 with min size of 100px
+        "custom-3": "repeat(auto-fill, minmax(300px, 1fr))",
+        "custom-4": "repeat(auto-fill, minmax(300px, 1fr))", // Custom grid-cols-3 with min size of 100px
       },
       colors: {
         background: "var(--background)",
