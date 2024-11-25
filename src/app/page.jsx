@@ -7,7 +7,7 @@ import PopularCars from "./_components/PopularCars";
 import Steps from "./_components/Steps";
 import Tastemonials from "./_components/Tastemonials";
 
-function page() {
+function Page() {
   return (
     <>
       <Header />
@@ -22,4 +22,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

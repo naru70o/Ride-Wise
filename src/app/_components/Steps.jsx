@@ -27,6 +27,9 @@ function Steps() {
       </h1>
 
       <div className="max-w-[120rem] col-start-2 col-span-10 mx-auto">
+        <h1 className="font-extrabold m-12 text-deep-brown text-center text-[2.4rem] md:text-[1.8rem] ">
+          Renting Made Simple, Your Ride in 3 Easy Steps
+        </h1>
         <div className="flex justify-between items-center mt-[4.6rem] w-full md:flex-col">
           {steps.map((step, index) => {
             return (

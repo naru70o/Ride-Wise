@@ -4,9 +4,9 @@ import Partners from "./Partners";
 
 function Header() {
   return (
-    <div className="grid col-start-2 m-0 mx-auto col-span-10 md:grid-cols-subgrid h-screen md:h-[70vh] md:col-start-1 md:col-span-12 md:bg-warm-ivory">
+    <div className="grid col-start-2 m-0 mx-auto col-span-10 md:grid-cols-subgrid h-screen md:h-[80vh] w-full md:col-start-1 md:col-span-12 md:bg-warm-ivory">
       <header className="max-w-[120rem] grid col-start-2 m-0 mx-auto col-span-10">
-        <nav className="flex justify-between items-center mt-[2rem]">
+        <nav className="flex justify-between items-center mt-[2rem] h-fit">
           <img
             className="h-[4.8rem] cursor-pointer md:h-[3.2rem]"
             src="Logo.png"

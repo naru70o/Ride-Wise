@@ -1,13 +1,13 @@
 function Newsletter() {
   return (
     <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid  col-start-1 m-0 col-span-12 bg-slate-teal ">
-      <h1 className="text-[2rem] text-sunset-orange font-extrabold lg:text-[3rem] max-w-[120rem] mx-auto w-full mt-[2rem] col-start-2 col-span-10 sm:text-[1.6rem]">
-        Our car collection
-      </h1>
-
       {/* container */}
-      <div className="flex justify-between max-w-[120rem] mx-auto w-full py-12 h-[35rem]  md:h-[22rem] sm:h-[13rem] col-start-2 col-span-10">
+      <div className="flex justify-between max-w-[120rem] mx-auto w-full py-12 md:py-8 h-[35rem] md:gap-4 md:h-[22rem] sm:h-[13rem] col-start-2 col-span-10">
         <div className="flex flex-col justify-between w-[60%] sm:w-full">
+          {/* section title */}
+          <h1 className="text-[2.8rem] text-sunset-orange font-extrabold lg:text-[3rem] max-w-[120rem] mx-auto w-full col-start-2 col-span-10 sm:text-[1.6rem] md:text-[1.6rem]">
+            Newsletter
+          </h1>
           {/* descriptoion */}
           <p className="text-white font-extrabold text-[4rem] leading-tight md:text-[2.4rem] slg:text-[3rem] sm:text-[1rem] sm:w-[60%]">
             Discover the Freedom of the Open Road with the Perfect Ride!
