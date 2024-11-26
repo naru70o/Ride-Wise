@@ -1,6 +1,4 @@
-import Link from "next/link";
 import Hero from "./Hero";
-import Partners from "./Partners";
 import Nav from "./Nav";
 
 function Header() {
@@ -9,7 +7,6 @@ function Header() {
       <header className="max-w-[120rem] grid col-start-2 m-0 mx-auto col-span-10">
         <Nav />
         <Hero />
-        <Partners />
       </header>
     </div>
   );

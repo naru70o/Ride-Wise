@@ -2,8 +2,8 @@ function Newsletter() {
   return (
     <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid  col-start-1 m-0 col-span-12 bg-slate-teal ">
       {/* container */}
-      <div className="flex justify-between max-w-[120rem] mx-auto w-full py-12 md:py-8 h-[35rem] md:gap-4 md:h-[22rem] sm:h-[13rem] col-start-2 col-span-10">
-        <div className="flex flex-col justify-between w-[60%] sm:w-full">
+      <div className="flex justify-between max-w-[120rem] mx-auto w-full h-[35rem] md:gap-4 md:h-[22rem] sm:h-[13rem] col-start-2 col-span-10">
+        <div className="flex py-12 sm:py-8 flex-col justify-between w-[60%] sm:w-full">
           {/* section title */}
           <h1 className="text-[2.8rem] text-sunset-orange font-extrabold lg:text-[3rem] max-w-[120rem] mx-auto w-full col-start-2 col-span-10 sm:text-[1.6rem] md:text-[1.6rem]">
             Newsletter
@@ -25,6 +25,8 @@ function Newsletter() {
             </button>
           </div>
         </div>
+
+        {/* image car */}
         <img
           className="h-[90%] md:hidden self-end"
           src="./newsletter-car-img.png"
