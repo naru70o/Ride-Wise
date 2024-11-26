@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { fastRefresh: false };
+const nextConfig = {};
 
 export default nextConfig;
