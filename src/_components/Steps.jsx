@@ -21,9 +21,12 @@ const steps = [
 
 function Steps() {
   return (
-    <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid col-start-1 m-0 col-span-12">
+    <div
+      className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid col-start-1 m-0 col-span-12"
+      id="steps"
+    >
       <h1 className="text-[2.8rem] col-start-2 col-span-10 text-sunset-orange font-extrabold lg:text-[3rem] max-w-[120rem] mx-auto w-full ">
-        Our car collection
+        Learn more
       </h1>
 
       <div className="max-w-[120rem] col-start-2 col-span-10 mx-auto">

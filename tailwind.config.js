@@ -2,14 +2,19 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/_components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        image: "url('/booking-image.jpg')",
+      },
       gridTemplateColumns: {
         "custom-3": "repeat(auto-fill, minmax(300px, 1fr))",
         "custom-4": "repeat(auto-fill, minmax(300px, 1fr))", // Custom grid-cols-3 with min size of 100px
+        "custom-2": "0.3fr 1fr",
+        "custom-2xlg": "1fr 1fr",
       },
       colors: {
         background: "var(--background)",

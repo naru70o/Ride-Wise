@@ -1,6 +1,9 @@
 function Newsletter() {
   return (
-    <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid  col-start-1 m-0 col-span-12 bg-slate-teal ">
+    <div
+      className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid  col-start-1 m-0 col-span-12 bg-slate-teal "
+      id="newsletter"
+    >
       {/* container */}
       <div className="flex justify-between max-w-[120rem] mx-auto w-full h-[35rem] md:gap-4 md:h-[22rem] sm:h-[13rem] col-start-2 col-span-10">
         <div className="flex py-12 sm:py-8 flex-col justify-between w-[60%] sm:w-full">

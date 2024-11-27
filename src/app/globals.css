@@ -100,3 +100,13 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+.image-booking {
+  background-image: url("/booking-image.jpg"); /* Use absolute path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: auto;
+}

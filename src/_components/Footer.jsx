@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerData = [
@@ -40,7 +41,8 @@ function Footer() {
       <div className="col-start-2 col-span-10 py-12">
         <img
           className="h-[5.4rem] sm:h-[3.8rem]"
-          src="./Logo-footer.png"
+          fill
+          src="/Logo-footer.png"
           alt="footer-logo"
         />
 
@@ -78,6 +80,14 @@ function Footer() {
               <li className="li-style">LinkedIn</li>
               <li className="li-style">TikTok</li>
             </ul>
+          </div>
+        </div>
+        {/* copy right */}
+        <div className="flex justify-center items-center mt-11">
+          <div className="text-2xl sm:text-lg text-center text-white opacity-50">
+            <p>
+              © 2024 portfolio project, not linked to any car rental business.
+            </p>
           </div>
         </div>
       </div>

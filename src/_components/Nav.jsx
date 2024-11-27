@@ -5,6 +5,13 @@ import { useState } from "react";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="flex relative justify-between items-center mt-[2rem] h-fit">
       <img
@@ -15,16 +22,19 @@ function Nav() {
 
       <ul className="flex text-[2.4rem] items-center transition-all text-deep-brown xl:text-[2rem] md:text-[1.6rem] flex-row gap-[2rem] sm:gap-[1rem] md:hidden">
         <li className="li-hover">
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className="li-hover">
-          <Link href="#">Cars</Link>
+          <Link href="/Cars">Cars</Link>
+        </li>
+        <li
+          onClick={() => scrollToSection("newsletter")}
+          className="li-hover cursor-pointer"
+        >
+          Newsletter
         </li>
         <li className="li-hover">
-          <Link href="#">About</Link>
-        </li>
-        <li className="li-hover">
-          <Link href="#">Contact</Link>
+          <Link href="/Testimonial">testimonial</Link>
         </li>
         <li className="bg-slate-teal px-[1rem] py-[0.6rem] xl:hidden text-soft-almond transition-all hover:bg-slate-teal-hover rounded-[0.8rem] ">
           <Link href="#">Get Ride Now</Link>
@@ -51,27 +61,27 @@ function Nav() {
         } p-6 rounded-lg bg-slate-teal left-6 right-6 top-20 z-100`}
       >
         <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-[1.6rem] text-white rounded-sm">
-          <a href="#" className="w-full text-center">
-            Features
-          </a>
-          <a href="#" className="w-full text-center">
-            Pricing
-          </a>
-          <a href="#" className="w-full text-center">
-            Resources
-          </a>
-          <a
-            href="#"
+          <Link href="/" className="w-full text-center">
+            Home
+          </Link>
+          <Link href="/Cars" className="w-full text-center">
+            Cars
+          </Link>
+          <Link href="#" className="w-full text-center">
+            Popular
+          </Link>
+          <Link
+            href="/Testimonial"
             className="w-full pt-6 border-t border-gray-400 text-center"
           >
-            Login
-          </a>
-          <a
+            Testimonial
+          </Link>
+          <Link
             href="#"
             className="w-full py-3 text-center rounded-full bg-sunset-orange hover:bg-sunset-orange-hover text-deep-brown"
           >
-            Sign Up
-          </a>
+            Get ride now
+          </Link>
         </div>
       </div>
     </nav>

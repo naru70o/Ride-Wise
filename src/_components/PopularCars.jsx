@@ -85,7 +85,8 @@ function PopularCars() {
                 </div>
               </div>
             );
-          })}
+          })
+          .slice(0, 3)}
       </div>
     </div>
   );

@@ -21,18 +21,18 @@ function Partners() {
 
   return (
     <div
-      className="grid max-w-[120rem] md:mt-[6.2rem] col-start-2 m-0 mx-auto col-span-10 scroller w-full"
+      className="grid max-w-[120rem] mt-[9.2rem] md:mt-[6.2rem] col-start-2 m-0 mx-auto col-span-10 scroller w-full"
       ref={scrollRef}
     >
       <div className="flex mt-[3.2rem] h-[4.8rem] lg:h-[3.2rem] justify-between opacity-55 md:mt-[4.8rem] scroller__inner">
-        <img src="./ferarari.png" />
-        <img src="./Chevrolet.png" />
-        <img src="./Honda.png" />
-        <img src="./Hyundai.png" />
-        <img src="./jeep.png" />
-        <img src="./Mercedes.png" />
-        <img src="./Porsche.png" />
-        <img src="./Toyota.png" />
+        <img src="./ferarari.png" alt="logo" />
+        <img src="./Chevrolet.png" alt="logo" />
+        <img src="./Honda.png" alt="logo" />
+        <img src="./Hyundai.png" alt="logo" />
+        <img src="./jeep.png" alt="logo" />
+        <img src="./Mercedes.png" alt="logo" />
+        <img src="./Porsche.png" alt="logo" />
+        <img src="./Toyota.png" alt="logo" />
       </div>
     </div>
   );
