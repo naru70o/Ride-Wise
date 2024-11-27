@@ -1,3 +1,5 @@
+import ButtonMore from "./ButtonMore";
+
 function TastemonilasList({ filteredTestimonials }) {
   return (
     <div className="mt-[9.2rem] sm:mt-[6.4rem]  grid col-start-2 my-0 col-span-10 w-full max-w-[120rem] mx-auto">
@@ -28,6 +30,7 @@ function TastemonilasList({ filteredTestimonials }) {
           );
         })}
       </div>
+      <ButtonMore path={"/Testimonial"} />
     </div>
   );
 }

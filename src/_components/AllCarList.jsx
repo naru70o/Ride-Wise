@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ButtonMore from "./ButtonMore";
+import Image from "next/image";
 
 function AllCarList({ filteredCar }) {
   return (
@@ -17,11 +18,14 @@ function AllCarList({ filteredCar }) {
               {/* Logo and Wishlist icon */}
               <div className="flex gap-2 py-2 px-8 items-center justify-between">
                 <div className="flex gap-4 items-center">
-                  <img
-                    className="align-middle h-[3.2rem] w-[3.2rem] "
-                    src={car.logo}
-                    alt={car.brand}
-                  />
+                  <div className="align-middle relative h-[3.2rem] w-[3.2rem]">
+                    <Image
+                      fill
+                      className="absolute "
+                      src={car.logo}
+                      alt={car.brand}
+                    />
+                  </div>
                   <div className="flex">
                     <div className="text-[1.6rem] flex flex-col font-bold text-deep-brown">
                       <span>
@@ -38,18 +42,21 @@ function AllCarList({ filteredCar }) {
               </div>
               {/* car image */}
               <div className="w-full px-2">
-                <img
-                  className="h-[15rem] my-0 mx-auto p-2 w-auto"
-                  src={car.image}
-                  alt={car.model}
-                />
+                <div className="h-[17rem] relative my-0 mx-auto p-2 w-auto">
+                  <Image
+                    fill
+                    className="absolute"
+                    src={car.image}
+                    alt={car.model}
+                  />
+                </div>
               </div>
               {/* type */}
               <div className="flex px-[2rem] gap-4">
-                <div className="min-w-[9rem] h-auto bg-sunset-orange text-deep-brown px-[1.6rem] text-center font-extrabold text-[1.4rem] rounded-[0.9rem]">
-                  <p className="flex text-center justify-center">
-                    {car.bodyType}
-                  </p>
+                <div className="flex justify-center items-center min-w-[9rem] h-auto bg-sunset-orange text-deep-brown px-[1.6rem] text-center font-extrabold text-[1.4rem] rounded-[0.9rem]">
+                  <div className="">
+                    <p>{car.bodyType}</p>
+                  </div>
                 </div>
                 <div className="flex bg-sunset-orange gap-4 text-deep-brown px-[1.6rem] items-center py-2 font-extrabold rounded-[0.9rem]">
                   <svg
@@ -120,7 +127,7 @@ function AllCarList({ filteredCar }) {
           );
         })}
       </div>
-      <ButtonMore />
+      <ButtonMore path={"/Cars"} />
     </div>
   );
 }
