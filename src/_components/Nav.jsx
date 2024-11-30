@@ -9,6 +9,7 @@ function Nav() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
     }
   };
 
@@ -67,9 +68,12 @@ function Nav() {
           <Link href="/Cars" className="w-full text-center">
             Cars
           </Link>
-          <Link href="#" className="w-full text-center">
-            Popular
-          </Link>
+          <div
+            onClick={() => scrollToSection("steps")}
+            className="w-full text-center cursor-pointer"
+          >
+            How it works
+          </div>
           <Link
             href="/Testimonial"
             className="w-full pt-6 border-t border-gray-400 text-center"

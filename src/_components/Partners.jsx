@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import "../_styles/logosStyle.css";
 import { useEffect, useRef } from "react";
 
@@ -21,18 +22,74 @@ function Partners() {
 
   return (
     <div
-      className="grid max-w-[120rem] mt-[9.2rem] md:mt-[6.2rem] col-start-2 m-0 mx-auto col-span-10 scroller w-full"
+      className="grid max-w-[120rem] mt-[9.2rem] md:mt-[6.2rem] col-start-2 m-0 mx-auto col-span-10 w-full scroller"
       ref={scrollRef}
     >
-      <div className="flex mt-[3.2rem] h-[4.8rem] lg:h-[3.2rem] justify-between opacity-55 md:mt-[4.8rem] scroller__inner">
-        <img src="./ferarari.png" alt="logo" />
-        <img src="./Chevrolet.png" alt="logo" />
-        <img src="./Honda.png" alt="logo" />
-        <img src="./Hyundai.png" alt="logo" />
-        <img src="./jeep.png" alt="logo" />
-        <img src="./Mercedes.png" alt="logo" />
-        <img src="./Porsche.png" alt="logo" />
-        <img src="./Toyota.png" alt="logo" />
+      <div className="flex my-0 mx-auto h-[5rem] justify-between opacity-55  scroller__inner">
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/audi-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/bmw-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/ford-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Chevrolet-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Honda-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Hyundai-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Mercedes-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Tesla-logo.png"
+            alt="logo"
+          />
+        </div>
       </div>
     </div>
   );

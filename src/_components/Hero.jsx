@@ -28,6 +28,7 @@ function Hero() {
           </button>
           <button
             type="button"
+            onClick={() => scrollToSection("steps")}
             className="px-[1.8rem] sm:text-[1.6rem] text-sunset-orange py- border-[0.5rem] border-solid border-sunset-orange hover:border-sunset-orange-hover transition-all hover:text-sunset-orange-hover md:text-misty-blue md:border-misty-blue"
           >
             Learn more ↓
