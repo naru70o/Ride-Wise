@@ -14,9 +14,9 @@ const lato = Lato({
 
 export default function RootLayout({ children }) {
   return (
-    <html className="text-[62.5%]" lang="en">
+    <html className="text-[62.5%] overscroll-none" lang="en">
       <body
-        className={`${lato.className} overflow-x-hidden antialiased my-0 mx-auto`}
+        className={`${lato.className} overscroll-none overflow-x-hidden antialiased my-0 mx-auto`}
       >
         {children}
       </body>
