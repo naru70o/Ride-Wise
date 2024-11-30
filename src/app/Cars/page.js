@@ -3,6 +3,10 @@ import Footer from "@/_components/Footer";
 import Nav from "@/_components/Nav";
 import { cars } from "@/_utility/fakeData";
 
+export const metadata = {
+  title: "Cars",
+};
+
 async function page() {
   return (
     <>

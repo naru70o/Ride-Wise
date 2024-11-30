@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 
 const footerData = [
@@ -35,6 +36,12 @@ const footerData = [
 ];
 
 function Footer() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="mt-[9.2rem] sm:mt-[6.4rem] w-full grid grid-cols-subgrid  col-start-1 m-0 col-span-12 bg-misty-blue">
       {/* Footer grid container */}
@@ -56,11 +63,27 @@ function Footer() {
 
           <div className="flex flex-col gap-12 text-deep-brown font-normal text-[2.4rem] md:text-[1.6rem] sm:text-[1.2rem] ">
             <ul className="transition-all">
-              <li className="li-style">About us</li>
-              <li className="li-style">Hero</li>
-              <li className="li-style">Newsletter</li>
-              <li className="li-style">Get ride</li>
-              <li className="li-style">Popular</li>
+              <li className="li-style" onClick={() => scrollToSection("steps")}>
+                About us
+              </li>
+              <li className="li-style" onClick={() => scrollToSection("hero")}>
+                Hero
+              </li>
+              <li
+                className="li-style"
+                onClick={() => scrollToSection("newsletter")}
+              >
+                Newsletter
+              </li>
+              <li className="li-style">
+                <Link href="/Cars">Get ride</Link>
+              </li>
+              <li
+                className="li-style"
+                onClick={() => scrollToSection("popular")}
+              >
+                Popular
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-12 text-deep-brown font-normal text-[2.4rem] md:text-[1.6rem] sm:text-[1.2rem]">

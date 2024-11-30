@@ -25,8 +25,8 @@ function Partners() {
       className="grid max-w-[120rem] mt-[9.2rem] md:mt-[6.2rem] col-start-2 m-0 mx-auto col-span-10 w-full scroller"
       ref={scrollRef}
     >
-      <div className="flex my-0 mx-auto h-[5rem] justify-between opacity-55  scroller__inner">
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+      <div className="flex my-0 mx-auto h-[5rem] items-center justify-between opacity-55  scroller__inner">
+        <div className="partnerLogo">
           <Image
             fill
             className="absolute"
@@ -34,47 +34,7 @@ function Partners() {
             alt="logo"
           />
         </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
-          <Image
-            fill
-            className="absolute"
-            src="/logos/bmw-logo.png"
-            alt="logo"
-          />
-        </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
-          <Image
-            fill
-            className="absolute"
-            src="/logos/ford-logo.png"
-            alt="logo"
-          />
-        </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
-          <Image
-            fill
-            className="absolute"
-            src="/logos/Chevrolet-logo.png"
-            alt="logo"
-          />
-        </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
-          <Image
-            fill
-            className="absolute"
-            src="/logos/Honda-logo.png"
-            alt="logo"
-          />
-        </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
-          <Image
-            fill
-            className="absolute"
-            src="/logos/Hyundai-logo.png"
-            alt="logo"
-          />
-        </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+        <div className="partnerLogo">
           <Image
             fill
             className="absolute"
@@ -82,7 +42,56 @@ function Partners() {
             alt="logo"
           />
         </div>
-        <div className="relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[0.5rem] sm:ml-[0.5rem] sm:mr-[3.5rem]">
+        <div className="partnerLogo">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/bmw-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="partnerLogo">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Hyundai-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="partnerLogo">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/ford-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="partnerLogo">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Chevrolet-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="partnerLogo">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Honda-logo.png"
+            alt="logo"
+          />
+        </div>
+
+        <div className="partnerLogo">
+          <Image
+            fill
+            className="absolute"
+            src="/logos/Mercedes-logo.png"
+            alt="logo"
+          />
+        </div>
+        <div className="partnerLogo">
           <Image
             fill
             className="absolute"

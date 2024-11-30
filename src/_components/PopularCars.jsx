@@ -2,7 +2,10 @@ import { cars } from "../_utility/fakeData";
 
 function PopularCars() {
   return (
-    <div className="mt-[9.2rem] sm:mt-[6.4rem] grid col-start-2 my-0 col-span-10 w-full max-w-[120rem] mx-auto">
+    <div
+      className="mt-[9.2rem] sm:mt-[6.4rem] grid col-start-2 my-0 col-span-10 w-full max-w-[120rem] mx-auto"
+      id="popular"
+    >
       <h1 className="text-[2.8rem] block max-w-[120rem] mx-auto w-full text-sunset-orange font-extrabold lg:text-[3rem]">
         Most Popular Rental Cars
       </h1>

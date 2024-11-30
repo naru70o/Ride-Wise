@@ -37,10 +37,8 @@ function Nav() {
         <li className="li-hover">
           <Link href="/Testimonial">testimonial</Link>
         </li>
-        <li className="bg-slate-teal px-[1rem] py-[0.6rem] xl:hidden text-soft-almond transition-all hover:bg-slate-teal-hover rounded-[0.8rem] ">
-          <Link href="#">Get Ride Now</Link>
-        </li>
       </ul>
+
       {/* Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}

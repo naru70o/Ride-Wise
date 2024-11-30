@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   const scrollToSection = (id) => {
@@ -24,7 +25,7 @@ function Hero() {
             type="button"
             className="bg-misty-blue hover:bg-misty-blue-hover text-white transition-all px-[1.8rem] py-[1rem]"
           >
-            Get Ride Now
+            <Link href="/Cars">Get Ride Now</Link>
           </button>
           <button
             type="button"

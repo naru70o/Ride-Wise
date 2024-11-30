@@ -2,7 +2,9 @@ import Footer from "@/_components/Footer";
 import Nav from "@/_components/Nav";
 import TastemonilasList from "@/_components/TastemonilasList";
 import { testimonials } from "@/_utility/fakeData";
-
+export const metadata = {
+  title: "Testimonials",
+};
 function page() {
   return (
     <>

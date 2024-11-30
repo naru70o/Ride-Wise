@@ -44,6 +44,10 @@ body {
   @apply font-extrabold text-[1.4rem] text-deep-brown;
 }
 
+.partnerLogo {
+  @apply relative h-[5rem] w-[5rem] ml-[3.5rem] mr-[3.5rem] md:ml-[1.5rem] md:mr-[1.5rem];
+}
+
 .info-sub {
   @apply text-[1.4rem] font-normal;
 }
@@ -109,4 +113,20 @@ body {
 
   width: 100%;
   height: auto;
+}
+
+.spinner {
+  margin: 3.2rem auto 1.6rem;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #ffa849;
+  border-right-color: #ffc280;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
 }
