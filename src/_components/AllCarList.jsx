@@ -41,14 +41,11 @@ function AllCarList({ filteredCar }) {
                 </div>
               </div>
               {/* car image */}
-              <div className="relative h-[15rem] w-auto px-2">
-                <Image
-                  fill
-                  className="absolute my-0 mx-auto p-2"
-                  src={car.image}
-                  alt={car.model}
-                />
-              </div>
+              <img
+                className="w-[235px] h-[150px] my-0 mx-auto p-2"
+                src={car.image}
+                alt={car.model}
+              />
               {/* type */}
               <div className="flex px-[2rem] gap-4">
                 <div className="flex justify-center items-center min-w-[9rem] h-auto bg-sunset-orange text-deep-brown px-[1.6rem] text-center font-extrabold text-[1.4rem] rounded-[0.9rem]">
