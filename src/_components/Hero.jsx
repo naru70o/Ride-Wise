@@ -1,5 +1,5 @@
 "use client";
-import HeroButtons from "@/_ui/HeroButtons";
+import Image from "next/image";
 
 function Hero() {
   const scrollToSection = (id) => {
@@ -37,11 +37,14 @@ function Hero() {
 
       {/* mobile and tablet image hero */}
 
-      <img
-        src="./hero-tablet-image.png"
-        alt="hero-image"
-        className="hidden md:h-[142px] md:block md:translate-y-[45%] sm:translate-y-[40%]"
-      />
+      <div className="hidden relative h-[150px] w-[235px] md:block md:translate-y-[45%] sm:translate-y-[40%]">
+        <Image
+          fill
+          src="/hero-tablet-image.png"
+          alt="hero-image"
+          className="absolute"
+        />
+      </div>
 
       <div className="">
         <div className="absolute bg-gradient-to-l from-slate-teal to-transparent h-[30.8rem] z-0 translate-y-[10%] bg-[length:100%_100%] w-full xl:h-[20.8rem] md:hidden xl:translate-y-[50%]"></div>

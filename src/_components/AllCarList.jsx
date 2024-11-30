@@ -16,7 +16,7 @@ function AllCarList({ filteredCar }) {
               key={car.id}
             >
               {/* Logo and Wishlist icon */}
-              <div className="flex gap-2 py-2 px-8 items-center justify-between">
+              <div className="flex w-full gap-2 py-2 px-8 items-center justify-between">
                 <div className="flex gap-4 items-center">
                   <div className="align-middle relative h-[3.2rem] w-[3.2rem]">
                     <Image
@@ -41,15 +41,13 @@ function AllCarList({ filteredCar }) {
                 </div>
               </div>
               {/* car image */}
-              <div className="w-full px-2">
-                <div className="h-[17rem] relative my-0 mx-auto p-2 w-auto">
-                  <Image
-                    fill
-                    className="absolute"
-                    src={car.image}
-                    alt={car.model}
-                  />
-                </div>
+              <div className="relative h-[15rem] w-auto px-2">
+                <Image
+                  fill
+                  className="absolute my-0 mx-auto p-2"
+                  src={car.image}
+                  alt={car.model}
+                />
               </div>
               {/* type */}
               <div className="flex px-[2rem] gap-4">

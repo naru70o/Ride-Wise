@@ -52,7 +52,7 @@ export const cars = [
     wishlist: false,
     image: "/cars/Hyundai-Elantra.png",
     seats: 5,
-    logo: "/logos/hyundai-logo.png",
+    logo: "/logos/Hyundai-logo.png",
     rating: "Good",
     lastMonthRented: 15,
   },
@@ -71,6 +71,7 @@ export const cars = [
     wishlist: false,
     image: "/cars/Mercedes-Benz-C-Class.png",
     seats: 5,
+
     logo: "/logos/Mercedes-logo.png",
     rating: "Good",
     lastMonthRented: 10,
