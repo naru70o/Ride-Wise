@@ -34,7 +34,7 @@ body {
 }
 
 .li-hover {
-  @apply hover:hover:text-slate-teal transition-all;
+  @apply hover:text-slate-teal transition-all;
 }
 .li-style {
   @apply hover:text-sunset-orange transition duration-[0.5s] cursor-pointer;

@@ -15,11 +15,13 @@ function Nav() {
 
   return (
     <nav className="flex relative justify-between items-center mt-[2rem] h-fit">
-      <img
-        className="h-[4.8rem] cursor-pointer md:h-[3.2rem]"
-        src="Logo.png"
-        alt="nav-logo"
-      />
+      <Link href="/">
+        <img
+          className="h-[4.8rem] cursor-pointer md:h-[3.2rem]"
+          src="Logo.png"
+          alt="nav-logo"
+        />
+      </Link>
 
       <ul className="flex text-[2.4rem] items-center transition-all text-deep-brown xl:text-[2rem] md:text-[1.6rem] flex-row gap-[2rem] sm:gap-[1rem] md:hidden">
         <li className="li-hover">

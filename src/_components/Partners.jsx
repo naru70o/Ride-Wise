@@ -82,7 +82,6 @@ function Partners() {
             alt="logo"
           />
         </div>
-
         <div className="partnerLogo">
           <Image
             fill

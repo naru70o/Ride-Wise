@@ -4,7 +4,7 @@ import TastemonilasList from "./TastemonilasList";
 import React, { useState, useEffect } from "react";
 
 function Tastemonials() {
-  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(850);
 
   // Update screen width on resize
   useEffect(() => {
