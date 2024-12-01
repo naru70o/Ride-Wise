@@ -113,11 +113,16 @@ function AllCarList({ filteredCar }) {
                 </div>
               </div>
               {/* Book now */}
-              <div className="bg-misty-blue transition-all hover:bg-misty-blue-hover cursor-pointer mt-[1.2rem] rounded-[1rem] py-[0.6rem]  mx-8">
-                <p className="text-[2rem] font-extrabold text-soft-almond text-center">
-                  Book Now
-                </p>
-              </div>
+              <Link href={`/Cars/${car.id}`}>
+                <div className="bg-misty-blue transition-all hover:bg-misty-blue-hover cursor-pointer mt-[1.2rem] rounded-[1rem] justify-center flex py-[0.6rem] mx-8">
+                  <div
+                    href={`/Cars/${car.id}`}
+                    className="text-[2rem] font-extrabold inline-block self-center text-soft-almond text-center"
+                  >
+                    Book Now
+                  </div>
+                </div>
+              </Link>
             </div>
           );
         })}

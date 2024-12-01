@@ -11,7 +11,7 @@ function Hero() {
   };
 
   return (
-    <div className="mt-[6.4rem] max-w-[120rem] mx-auto grid grid-cols-2 md:flex md:flex-col md:items-center md:justify-between">
+    <div className="mt-[9.2rem] sm:mt-[6.4rem] max-w-[120rem] mx-auto grid grid-cols-2 md:flex md:flex-col md:items-center md:justify-between">
       <div className="">
         <h1 className="text-[4rem] sm:text-[2.4rem] text-deep-brown font-extrabold leading-snug text-left xl:text-[3.2rem] md:text-center">
           Discover the Freedom of the Open Road with the Perfect Ride!

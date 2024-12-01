@@ -18,7 +18,7 @@ function Nav() {
       <Link href="/">
         <img
           className="h-[4.8rem] cursor-pointer md:h-[3.2rem]"
-          src="Logo.png"
+          src="/Logo.png"
           alt="nav-logo"
         />
       </Link>
@@ -81,7 +81,7 @@ function Nav() {
             Testimonial
           </Link>
           <Link
-            href="#"
+            href="/Cars"
             className="w-full py-3 text-center rounded-full bg-sunset-orange hover:bg-sunset-orange-hover text-deep-brown"
           >
             Get ride now

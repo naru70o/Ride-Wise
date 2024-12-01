@@ -4,15 +4,15 @@ function Username() {
   return (
     <label
       htmlFor="UserEmail"
-      className="text-[1.6rem] text-deep-brown p-4 border rounded-[0.8rem] border-deep-brown"
+      className="text-[1.6rem] text-deep-brown p-4 border-deep-brown"
     >
-      <span className="text-[1.6rem] block"> Email </span>
+      <span className="font-bold pl-2 block">Email</span>
 
       <input
         type="email"
         id="UserEmail"
         placeholder="example.com"
-        className="bg-pale-lemon text-[1.6rem] focus:outline-none active:outline-none outline-none font-normal w-full border-none"
+        className="box-border mt-4 text-[1.6rem] h-[4rem] w-full p-4 rounded-lg border-2 border-blue-400 transition duration-150 ease-in-out focus:outline-none focus:border-gray-400"
       />
     </label>
   );
