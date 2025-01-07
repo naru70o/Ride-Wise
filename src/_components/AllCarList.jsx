@@ -20,8 +20,9 @@ function AllCarList({ filteredCar }) {
                 <div className="flex gap-4 items-center">
                   <div className="align-middle relative h-[3.2rem] w-[3.2rem]">
                     <Image
-                      fill
-                      className="absolute "
+                      fill="true"
+                      className="absolute"
+                      sizes="100%"
                       src={car.logo}
                       alt={car.brand}
                     />
@@ -69,21 +70,36 @@ function AllCarList({ filteredCar }) {
               {/* Features */}
               <div className="flex mt-[1.6rem] gap-4 px-8">
                 <div className="flex gap-1 items-center">
-                  <img className="h-[2.4rem] w-auto" src="./icons/gas.png" />
+                  <Image
+                    width={24}
+                    height={24}
+                    sizes="100%"
+                    src="/icons/gas.png"
+                    alt="gas"
+                  />
                   <p className="text-deep-brown font-extrabold text-[1.2rem]">
                     {car.fuelType}
                   </p>
                 </div>
                 <div className="flex gap-1 items-center">
-                  <img className="h-[2.4rem] w-auto" src="./icons/auto.png" />
+                  <Image
+                    width={24}
+                    height={24}
+                    sizes="100%"
+                    src="/icons/auto.png"
+                    alt="auto"
+                  />
                   <p className="text-deep-brown font-extrabold text-[1.2rem]">
                     {car.transmission}
                   </p>
                 </div>
                 <div className="flex gap-1 items-center">
-                  <img
-                    className="h-[2.4rem] w-auto"
-                    src="./icons/car-hatch.png"
+                  <Image
+                    width={24}
+                    height={24}
+                    sizes="100%"
+                    src="/icons/car-hatch.png"
+                    alt="hatchback"
                   />
                   <p className="text-deep-brown font-extrabold text-[1.2rem]">
                     Faster

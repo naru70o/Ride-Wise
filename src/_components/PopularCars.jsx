@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cars } from "../_utility/fakeData";
 
 function PopularCars() {
@@ -64,8 +65,11 @@ function PopularCars() {
                   {/* flex container */}
                   <div className="flex gap-2 py-2 px-8 items-center justify-between">
                     <div className="flex gap-4 items-center">
-                      <img
-                        className="align-middle h-[3.2rem] w-[3.2rem]"
+                      <Image
+                        className="align-middle"
+                        width={32}
+                        height={32}
+                        sizes="100%"
                         src={car.logo} // Dynamically use the car logo
                         alt={`${car.brand} logo`}
                       />

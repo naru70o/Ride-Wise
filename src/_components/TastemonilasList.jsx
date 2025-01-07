@@ -17,6 +17,8 @@ function TastemonilasList({ filteredTestimonials }) {
             >
               <Image
                 className="h-[3.4rem] w-[3.4rem]"
+                width={34}
+                height={34}
                 src="/quote.png"
                 alt="quotes"
               />
