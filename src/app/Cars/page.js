@@ -10,7 +10,7 @@ export const metadata = {
 async function page() {
   return (
     <>
-      <div className="col-start-2 max-w-[120rem] my-0 w-full col-span-10">
+      <div className="col-start-2 max-w-[120rem] my-0 mx-auto w-full col-span-10">
         <Nav />
         <AllCarList filteredCar={cars} />
       </div>

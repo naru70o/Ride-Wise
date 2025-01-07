@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ButtonMore from "./ButtonMore";
 
 function TastemonilasList({ filteredTestimonials }) {
@@ -14,7 +15,7 @@ function TastemonilasList({ filteredTestimonials }) {
               className="bg-soft-almond flex flex-col rounded-[1.8rem] md:mx-auto overflow-hidden mb-10 h-[35rem] p-4 md:w-[80%]"
               key={index}
             >
-              <img
+              <Image
                 className="h-[3.4rem] w-[3.4rem]"
                 src="/quote.png"
                 alt="quotes"
@@ -23,7 +24,7 @@ function TastemonilasList({ filteredTestimonials }) {
                 <p className="text-2xl w-[70%]">{testimonial.feedback}</p>
 
                 <p className="text-[1.2rem] font-bold w-[70%] italic">
-                  – {testimonial.name}, {testimonial.location}
+                  {testimonial.name}, {testimonial.location}
                 </p>
               </div>
             </div>
