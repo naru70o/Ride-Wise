@@ -1,3 +1,3 @@
 # live
 
-(https://ride-wise-7zzv.vercel.app/)
+(https://ride-wise-beta.vercel.app/)
