@@ -13,6 +13,7 @@ RideWise is a responsive car rental website built with Next.js and styled using 
 
 - **Next.js**
 - **Tailwind CSS**
+- **Figma**
 
 ## Getting Started
 
